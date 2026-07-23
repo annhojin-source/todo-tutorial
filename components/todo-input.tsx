@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { PlusIcon } from "@phosphor-icons/react";
 import {
   CATEGORIES,
   DEFAULT_PRIORITY,
@@ -117,7 +118,8 @@ export function TodoInput({ onAdd }: TodoInputProps) {
         </CardContent>
 
         <CardFooter>
-          <Button type="submit" className="w-full">
+          <Button type="submit" size="lg" className="w-full rounded-full">
+            <PlusIcon data-icon="inline-start" />
             추가
           </Button>
         </CardFooter>
